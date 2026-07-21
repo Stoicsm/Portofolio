@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portofolio data science yang aman, cepat, responsif, dan interaktif." />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'none'; base-uri 'none'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests" />
+    <meta name="referrer" content="no-referrer" />
+    <title>Jonathan Aditya S | Portofolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Lewati ke konten</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Navigasi utama">
+        <div class="brand-group">
+          <img class="nav-avatar" src="assets/projects/Jow.jpeg" alt="Foto profil" width="36" height="36" />
+          <a class="brand" href="#home" aria-label="Beranda">Jonathan Aditya S</a>
+        </div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="hamburger"></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#home">Beranda</a>
+          <a href="#projects">Sertifikat</a>
+          <a href="#skills">Skill</a>
+          <a href="#contact">Kontak</a>
+          <button class="theme-toggle" type="button" aria-label="Ganti tema">Mode gelap</button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Halo, saya Jonathan</p>
+          <h1>Mahasiswa <span class="text-accent">Informatika</span></h1>
+          <p class="hero-desc">Mahasiswa Informatika dari Universitas Singaperbangsa Karawang. Tertarik di bidang data science, machine learning, dan pengembangan web.</p>
+          <div class="actions">
+            <a class="button primary" href="#projects">Lihat Sertifikat</a>
+            <a class="button secondary" href="#contact">Hubungi Saya</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="hero-photo-wrapper">
+            <img class="hero-photo" src="assets/projects/Jow.jpeg" alt="Foto Jonathan Aditya S" width="300" height="300" />
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Sertifikat</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Proyek</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Pencapaian</p>
+          <h2>Sertifikat &amp; Proyek</h2>
+          <p class="section-sub">Beberapa sertifikat dan proyek yang pernah saya kerjakan.</p>
+        </div>
+        <div class="filters reveal" aria-label="Filter proyek">
+          <button class="filter active" type="button" data-filter="all">Semua</button>
+          <button class="filter" type="button" data-filter="sertifikat">Sertifikat</button>
+          <button class="filter" type="button" data-filter="web">Proyek</button>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal" data-category="sertifikat" tabindex="0" role="button" data-project="cert-ict">
+            <div class="card-thumb">
+              <img src="assets/projects/ICT.jpg" alt="Sertifikat ICT Business Development" width="400" height="225" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Sertifikat</span>
+              <h3>ICT Business Development</h3>
+              <p>Rangkaian acara TED 2024 oleh divisi IPTEK, Keluarga Mahasiswa DTEDI, Sekolah Vokasi UGM.</p>
+            </div>
+          </article>
+          <article class="project-card reveal" data-category="sertifikat" tabindex="0" role="button" data-project="cert-bmc">
+            <div class="card-thumb">
+              <img src="assets/projects/BMC.png" alt="Sertifikat Business Model Canvas" width="400" height="225" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Sertifikat</span>
+              <h3>Business Model Canvas</h3>
+              <p>Pelatihan penyusunan Business Model Canvas untuk pengembangan ide bisnis.</p>
+            </div>
+          </article>
+          <article class="project-card reveal" data-category="sertifikat" tabindex="0" role="button" data-project="cert-idsc">
+            <div class="card-thumb">
+              <img src="assets/projects/IDSC.jpg" alt="Sertifikat IDSC" width="400" height="225" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Sertifikat</span>
+              <h3>International Data Science Competition</h3>
+              <p>Keikutsertaan dalam kompetisi data science tingkat Internasional (IDSC).</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Kemampuan</p>
+          <h2>Skill Utama</h2>
+        </div>
+        <div class="skill-grid">
+          <div class="skill-card reveal">
+            <div class="skill-icon">&#60;/&#62;</div>
+            <h3>Programming</h3>
+            <p>Python, SQL, JavaScript, dan analisis statistik</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">&#9881;</div>
+            <h3>Machine Learning</h3>
+            <p>Klasifikasi, regresi, clustering, dan forecasting</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">&#9998;</div>
+            <h3>NLP</h3>
+            <p>Text mining dan natural language processing</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">&#9783;</div>
+            <h3>Data Visualization</h3>
+            <p>Dashboard KPI dan visualisasi data interaktif</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">&#9888;</div>
+            <h3>Keamanan</h3>
+            <p>Privasi data, validasi input, dan praktik keamanan</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="contact-wrapper">
+          <div class="contact-info reveal">
+            <p class="eyebrow">Kontak</p>
+            <h2>Mari Berdiskusi</h2>
+            <p>Punya pertanyaan atau ingin berkolaborasi? Kirim pesan langsung ke email saya melalui form ini.</p>
+          </div>
+          <form class="contact-form reveal" novalidate>
+            <label>
+              Nama
+              <input name="name" type="text" autocomplete="name" placeholder="Nama lengkap" minlength="2" maxlength="80" required />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" placeholder="email@contoh.com" maxlength="120" required />
+            </label>
+            <label>
+              Pesan
+              <textarea name="message" rows="5" placeholder="Tulis pesan Anda di sini..." minlength="10" maxlength="800" required></textarea>
+            </label>
+            <p class="form-status" role="status" aria-live="polite"></p>
+            <button class="button primary" type="submit">Kirim Pesan</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal-overlay" id="modal" role="dialog" aria-modal="true" aria-label="Detail proyek" hidden>
+      <div class="modal-content">
+        <button class="modal-close" type="button" aria-label="Tutup">&times;</button>
+        <h2 class="modal-title"></h2>
+        <p class="modal-desc"></p>
+        <div class="modal-gallery"></div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Jonathan Aditya S</p>
+    </footer>
+  </body>
+</html>
